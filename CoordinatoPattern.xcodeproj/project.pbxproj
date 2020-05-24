@@ -13,6 +13,14 @@
 		024D4655247A682A007E5FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024D4653247A682A007E5FF1 /* Main.storyboard */; };
 		024D4657247A682A007E5FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024D4656247A682A007E5FF1 /* Assets.xcassets */; };
 		024D465A247A682A007E5FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024D4658247A682A007E5FF1 /* LaunchScreen.storyboard */; };
+		024D4663247A6866007E5FF1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D4662247A6866007E5FF1 /* AppCoordinator.swift */; };
+		024D4666247A6E30007E5FF1 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D4665247A6E30007E5FF1 /* AuthCoordinator.swift */; };
+		024D4668247A6E48007E5FF1 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024D4667247A6E48007E5FF1 /* Auth.storyboard */; };
+		024D466A247A6EB5007E5FF1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D4669247A6EB5007E5FF1 /* LoginVC.swift */; };
+		024D466C247A6EC1007E5FF1 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D466B247A6EC1007E5FF1 /* SignupVC.swift */; };
+		024D466F247A740E007E5FF1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D466E247A740E007E5FF1 /* HomeCoordinator.swift */; };
+		024D4671247A7426007E5FF1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024D4670247A7426007E5FF1 /* Home.storyboard */; };
+		024D4673247A7469007E5FF1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D4672247A7469007E5FF1 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		024D4656247A682A007E5FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		024D4659247A682A007E5FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024D465B247A682A007E5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024D4662247A6866007E5FF1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		024D4665247A6E30007E5FF1 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		024D4667247A6E48007E5FF1 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		024D4669247A6EB5007E5FF1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		024D466B247A6EC1007E5FF1 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		024D466E247A740E007E5FF1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		024D4670247A7426007E5FF1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		024D4672247A7469007E5FF1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		024D464C247A682A007E5FF1 /* CoordinatoPattern */ = {
 			isa = PBXGroup;
 			children = (
+				024D4661247A684E007E5FF1 /* Modules */,
 				024D464D247A682A007E5FF1 /* AppDelegate.swift */,
 				024D464F247A682A007E5FF1 /* SceneDelegate.swift */,
 				024D4651247A682A007E5FF1 /* ViewController.swift */,
@@ -65,6 +82,37 @@
 				024D465B247A682A007E5FF1 /* Info.plist */,
 			);
 			path = CoordinatoPattern;
+			sourceTree = "<group>";
+		};
+		024D4661247A684E007E5FF1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				024D466D247A73F4007E5FF1 /* Home */,
+				024D4664247A6E1E007E5FF1 /* Auth */,
+				024D4662247A6866007E5FF1 /* AppCoordinator.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		024D4664247A6E1E007E5FF1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				024D4665247A6E30007E5FF1 /* AuthCoordinator.swift */,
+				024D4669247A6EB5007E5FF1 /* LoginVC.swift */,
+				024D466B247A6EC1007E5FF1 /* SignupVC.swift */,
+				024D4667247A6E48007E5FF1 /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		024D466D247A73F4007E5FF1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				024D466E247A740E007E5FF1 /* HomeCoordinator.swift */,
+				024D4672247A7469007E5FF1 /* HomeVC.swift */,
+				024D4670247A7426007E5FF1 /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024D4668247A6E48007E5FF1 /* Auth.storyboard in Resources */,
+				024D4671247A7426007E5FF1 /* Home.storyboard in Resources */,
 				024D465A247A682A007E5FF1 /* LaunchScreen.storyboard in Resources */,
 				024D4657247A682A007E5FF1 /* Assets.xcassets in Resources */,
 				024D4655247A682A007E5FF1 /* Main.storyboard in Resources */,
@@ -138,7 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024D4666247A6E30007E5FF1 /* AuthCoordinator.swift in Sources */,
+				024D466C247A6EC1007E5FF1 /* SignupVC.swift in Sources */,
+				024D4663247A6866007E5FF1 /* AppCoordinator.swift in Sources */,
+				024D4673247A7469007E5FF1 /* HomeVC.swift in Sources */,
+				024D466A247A6EB5007E5FF1 /* LoginVC.swift in Sources */,
 				024D4652247A682A007E5FF1 /* ViewController.swift in Sources */,
+				024D466F247A740E007E5FF1 /* HomeCoordinator.swift in Sources */,
 				024D464E247A682A007E5FF1 /* AppDelegate.swift in Sources */,
 				024D4650247A682A007E5FF1 /* SceneDelegate.swift in Sources */,
 			);

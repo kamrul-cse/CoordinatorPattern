@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="ihR-1u-LPp">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="f31-RL-4Lp" customClass="LoginVC" customModule="CoordinatoPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gi6-pF-YwN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-aw-jsk">
+                                <rect key="frame" x="165.5" y="432" width="83.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82k-Ky-Ewg">
+                                <rect key="frame" x="89.5" y="518" width="235" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="New User? Create Account"/>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="f31-RL-4Lp" eventType="touchUpInside" id="aWk-kB-xvW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vEB-aw-jsk" firstAttribute="centerY" secondItem="WWG-N3-k2Y" secondAttribute="centerY" id="OrI-q8-TAq"/>
+                            <constraint firstItem="82k-Ky-Ewg" firstAttribute="top" secondItem="vEB-aw-jsk" secondAttribute="bottom" constant="44" id="QPX-9r-HJX"/>
+                            <constraint firstItem="82k-Ky-Ewg" firstAttribute="centerX" secondItem="WWG-N3-k2Y" secondAttribute="centerX" id="XM1-0f-bgz"/>
+                            <constraint firstItem="vEB-aw-jsk" firstAttribute="centerX" secondItem="WWG-N3-k2Y" secondAttribute="centerX" id="iPC-Jd-1hW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WWG-N3-k2Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWD-KH-q2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="129"/>
+        </scene>
+        <!--SignupVC-->
+        <scene sceneID="n6P-1p-eYL">
+            <objects>
+                <viewController storyboardIdentifier="SignupVC" id="hXd-19-s8o" customClass="SignupVC" customModule="CoordinatoPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X9d-TN-Qs4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZS-WJ-fJ0">
+                                <rect key="frame" x="154.5" y="432" width="105.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsm-Cm-ysO">
+                                <rect key="frame" x="150.5" y="552" width="113" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Signup Done"/>
+                                <connections>
+                                    <action selector="signupDoneTapped:" destination="hXd-19-s8o" eventType="touchUpInside" id="tkb-EC-MKo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PZS-WJ-fJ0" firstAttribute="centerY" secondItem="NXa-Zh-d3u" secondAttribute="centerY" id="5c3-5P-yeA"/>
+                            <constraint firstItem="PZS-WJ-fJ0" firstAttribute="centerX" secondItem="NXa-Zh-d3u" secondAttribute="centerX" id="COl-b6-A4i"/>
+                            <constraint firstItem="nsm-Cm-ysO" firstAttribute="top" secondItem="PZS-WJ-fJ0" secondAttribute="bottom" constant="78" id="Hd1-sc-mML"/>
+                            <constraint firstItem="nsm-Cm-ysO" firstAttribute="centerX" secondItem="NXa-Zh-d3u" secondAttribute="centerX" id="hIy-AZ-eNe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NXa-Zh-d3u"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Np9-6C-HCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="124"/>
+        </scene>
+    </scenes>
+</document>
