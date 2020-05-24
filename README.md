@@ -13,7 +13,15 @@ Here we are going to learn
 
 Manage own navigation flow with Coordinator Pattern.
 
-See step by step in YouTube Video: <a href="https://youtu.be/8BcxIJ1Ms3E">Part-1</a>, <a href="https://youtu.be/_TIg3eaxuCA">Part-2</a>
+See step by step in-
+
+<a href="https://youtu.be/8BcxIJ1Ms3E">
+<img src="https://www.edmtunes.com/wp-content/uploads/2018/01/nc-logo-youtube-mobile.jpg" width="80px" >
+</a>
+
+ + <a href="https://youtu.be/0Q4VxMX_ZCE">Part-I: Introduction to Coordinator Pattern</a>
+ + <a href="https://youtu.be/oA-gJCWL3yo">Part-II: Introducing AppCoordinator</a>
+ + <a href="https://youtu.be/q2t7_Hheyuc">Part-III: Manage Child Coordinators</a>
 
 Result:
 
